@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Assignment Reminder</h1>
+            <p>Fetch and view your upcoming assignments from Canvas</p>
+        </header>
+
+        <div>
+            <input type="text" id="apiKey" placeholder="API Key">
+            <input type="text" id="apiId" placeholder="API ID">
+            <button onclick="fetchAssignments()">Fetch Assignments</button>
+        </div>
+
+        <ul id="assignmentsList"></ul>
+
+        <footer>
+            <p>About the Project: This is a  utility built to assist students in fetching, viewing and reminding them about their assignments directly from the Canvas Learning Management System using the Canvas API.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
